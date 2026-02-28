@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sigma AI | Hybrid Intelligence</title>
+    <script src="https://cdn.jsdelivr.net/npm/marked/marked.min.js"></script>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div id="loader-screen">
+        <div class="neural-core">
+            <div class="ring blue"></div>
+            <div class="ring purple"></div>
+            <div class="ring orange"></div>
+            <div class="sigma-logo">Σ</div>
+        </div>
+        <div class="loading-text">SYNCING FIREBASE CORES...</div>
+    </div>
+
+    <div id="app-interface" class="hidden-app">
+        <aside id="sidebar">
+            <div class="logo">
+                <div class="logo-box">Σ</div>
+                <span>SIGMA AI</span>
+            </div>
+            <button class="new-chat-btn" id="new-chat-btn">+ New Session</button>
+            <div id="history-list" class="nav-links">
+                </div>
+        </aside>
+
+        <main id="chat-container">
+            <header class="chat-header">
+                <div class="engine-info">Hybrid v2.5.2 <span class="badge">SECURE</span></div>
+            </header>
+
+            <div id="chat-box">
+                </div>
+
+            <div class="input-wrap">
+                <div class="input-area" id="input-area">
+                    <button id="enhance-btn" class="ctrl-btn">🪄</button>
+                    <textarea id="user-input" placeholder="Enter command..." rows="1"></textarea>
+                    <button id="send-btn" class="ctrl-btn">➔</button>
+                </div>
+            </div>
+        </main>
+    </div>
+
+    <script type="module" src="script.js"></script>
+</body>
+</html>
