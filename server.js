@@ -5,7 +5,7 @@ const path = require('path');
 
 const app = express();
 app.use(express.json());
-app.use(express.static(path.join(__dirname, 'public')));
+app.use(express.static(path.join(__dirname)));
 
 const genAI = new GoogleGenerativeAI(process.env.GEMINI_API_KEY);
 
@@ -56,4 +56,5 @@ app.post('/api/enhance', async (req, res) => {
 });
 
 const PORT = 3005;
+
 app.listen(PORT, () => console.log(`🚀 Sigma Universal: http://localhost:${PORT}`));
